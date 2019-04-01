@@ -27,6 +27,15 @@
 
   body {background-color:#fafafa; font:"Slabo 27px";
   }
+
+  @media (max-width: 768px) {
+    .navbar-nav {
+      display: none;
+    }
+    .in .navbar-nav {
+      display: block;
+    }
+  }
   </style>
 </head>
 
@@ -37,26 +46,27 @@
   </header>
 
 	<nav class="navbar navbar-inverse">
-  	<div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-toggle" id="toggle">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </a>
+      <div class="container-fluid">
+        <div class="navbar-header">
+      <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" id="toggle">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </a>
         <a class="navbar-brand" href="index.html"></a>
+      </div>
+      <div class="navbar-left nav-menu">
+      <ul class="nav navbar-nav">
+      <li class="active"><a href="#home" data-toggle="pill"><i class="glyphicon glyphicon-home" aria-hidden="true"></i> Home</a></li>
+        <li><a href="#pro" data-toggle="pill"><i class="glyphicon glyphicon-user" aria-hidden="true"></i> Personal Info</a></li>
+        <li><a href="#edu" data-toggle="pill"><i class="glyphicon glyphicon-education" aria-hidden="true"></i> Education </a></li>
+        <li><a href="#exp" data-toggle="pill"><i class="glyphicon glyphicon-briefcase" aria-hidden="true"></i> Experience</a></li>
+        <li><a href="#ski" data-toggle="pill"><i class="glyphicon glyphicon-cog" aria-hidden="true"></i> Skill</a></li>
+      </ul>
+      </div>
     </div>
-    <div class="collapse nav-menu">
-    <ul class="nav navbar-nav">
-    <li class="active"><a href="#home" ><i class="glyphicon glyphicon-home" aria-hidden="true"></i> Home</a></li>
-      <li><a href="#pro" ><i class="glyphicon glyphicon-user" aria-hidden="true"></i> Personal Info</a></li>
-      <li><a href="#edu" ><i class="glyphicon glyphicon-education" aria-hidden="true"></i> Education </a></li>
-      <li><a href="#exp" ><i class="glyphicon glyphicon-briefcase" aria-hidden="true"></i> Experience</a></li>
-      <li><a href="#ski" ><i class="glyphicon glyphicon-cog" aria-hidden="true"></i> Skill</a></li>
-    </ul>
-    </div>
-  </div>
-</nav>
+  </nav>
+  
 
 <div class="container bg-alert">
 <div class="tab-content col-sm-9">
